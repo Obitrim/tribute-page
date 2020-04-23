@@ -13,6 +13,7 @@ body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	background-color: var(--light-grey);
+	overflow: hidden;
 }
 
 p {
@@ -32,9 +33,7 @@ h3 {
 	font-size: calc(var(--font-size) + 4px);
 }
 
-h1, h2, h3 {
-	margin-top: 0;
-}
+
 
 ul li {
 	font-size: 14px;
@@ -163,6 +162,10 @@ footer {
 }
 
 @media only screen and (min-width: 700px){
+
+	h1, h2, h3 {
+		margin-top: 0;
+	}
 	.page-content .row {
 		display: flex;
 		flex-direction: row-reverse;
