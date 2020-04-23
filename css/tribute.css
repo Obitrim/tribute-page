@@ -1,0 +1,180 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	--primary: #1B1C1D;
+	--orange: #F2711C;
+	--red: #DB2828;
+	--light-grey: #F6F6F6;
+	--font-size: 16px;
+
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--light-grey);
+}
+
+p {
+	font-size: 14px;
+	line-height: 160%;
+}
+
+h1 {
+	font-size: calc(var(--font-size) + 24px);
+}
+
+h2 {
+	font-size: calc(var(--font-size) + 12px);
+}
+
+h3 {
+	font-size: calc(var(--font-size) + 4px);
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+
+ul li {
+	font-size: 14px;
+	font-weight: normal;
+	font-weight: normal;
+}
+
+
+.container {
+	max-width: 992px;
+	margin: 0 auto;
+	padding: 0 1.4rem;
+}
+
+.v-whitespace-sm {
+	padding: calc(var(--font-size) * 3) 0;
+}
+
+.v-whitespace {
+	padding: calc(var(--font-size) * 6) 0;
+}
+
+.v-whitespace-lg {
+	padding: calc(var(--font-size) * 7) 0;
+}
+
+.citation a {
+	text-decoration: none;
+	color: var(--orange);
+}
+
+.citation a:hover {
+	text-decoration: underline;
+}
+
+/*banner*/
+
+.banner {
+	background-color: var(--primary);
+	color: #fff;
+}
+
+
+.banner__content {
+	text-align: center;
+}
+
+.banner__content p {
+	margin: 0;
+}
+
+.banner__content h1 {
+	margin: 0.5rem;
+	color: var(--orange);
+}
+
+.profile__img {
+	width: 100%;
+}
+
+
+/*favorite quote*/
+.fav-quote {
+	background-color: var(--primary);
+	color: #fff;
+	text-align: center;
+}
+
+.fav-quote h3 {
+	color: var(--orange);
+}
+
+/*bibliography*/
+
+.bibliography__books {
+	display: grid;
+	grid-column-gap: 2em;
+	grid-row-gap: 1em;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.bibliography__intro p {
+	max-width: 60%;
+	margin-bottom: 2rem;
+}
+
+.bibliography__books {
+	padding: 0;
+	list-style: none;
+}
+
+.bibliography__book {
+	padding: 1rem;
+	padding-right: 0;
+	border-left: 3px solid var(--orange);
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.pagination {
+	margin-top: 3rem;
+}
+
+.page-btn {
+	background-color: #fff;
+	color: var(--orange);
+	border: none;
+	padding: .3rem .8rem;
+	border: 1px solid var(--orange);
+	transition: .25s;
+}
+
+.page-btn:hover,
+.page-btn.active {
+	cursor: pointer;
+	background-color: var(--orange);
+	color: #fff;
+}
+
+
+/*footer*/
+footer {
+	text-align: center;
+	color: var(--orange);
+	background-color: var(--primary);
+}
+
+@media only screen and (min-width: 700px){
+	.page-content .row {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+
+	.page-content .info {
+		max-width: 60%
+	}
+
+	.page-content .profile {
+		max-width: 35%;
+	}
+}
