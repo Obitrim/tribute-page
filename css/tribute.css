@@ -142,6 +142,7 @@ ul li {
 	color: var(--orange);
 	border: none;
 	padding: .3rem .8rem;
+	padding-right: 0px;
 	border: 1px solid var(--orange);
 	transition: .25s;
 }
