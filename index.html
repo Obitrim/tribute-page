@@ -4,9 +4,12 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Tribute | Dr Myles Monroe</title>
-
+	
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/tribute.css" />
+
+	<!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!-- theme color -->
 	<meta name="theme_color" content="#1B1C1D" />
@@ -18,7 +21,7 @@
 
 		<header class="banner">
 			<div class="container">
-				<div class="banner__content v-whitespace-lg">
+				<div class="banner__content v-whitespace-lg" data-aos-duration="400" data-aos="fade-in">
 					<p>A Tribute to</p>
 					<h1>Dr. Myles Munroe</h1>
 					<p>Teacher and Role Model</p>
@@ -32,25 +35,27 @@
 			<div class="container">
 				<div class="row v-whitespace">
 					<aside class="profile">
-						<img src="./images/profile.jpg" class="profile__img" alt="Dr Myles Munroe" />
+						<img src="./images/profile.jpg" class="profile__img" alt="Dr Myles Munroe" data-aos-duration="400" data-aos="flip-right" />
 					</aside>
 					<main class="info">
 						<div class="early-life">
-							<h2>Early Life and Education</h2>
-							<p>
+							<h2 data-aos-duration="400" data-aos="fade-in">Early Life and Education</h2>
+							<p data-aos-duration="400" data-aos="slide-up">
 								Born Myles Egbert Munroe in 1954 in Nassau, Bahamas, Munroe grew up poor in a family of eleven children. Raised in the Nassau constituency of Bain Town, he was a lifelong resident of the Commonwealth. Munroe became a Christian during his teenage years, later attending Oral Roberts University (ORU) where he received his Bachelor of Fine Arts, Education, and Theology in 1978 and a Master’s degree in administration from the University of Tulsa in 1980. Munroe was also the recipient of honorary doctoral degrees from various schools of higher education[4] and served as an adjunct professor of the Graduate School of Theology at ORU. He wrote a number of books. 
 							</p>
 						</div>
 						<div class="personal-life">
-							<h2>Personal Life</h2>
-							<p>
-								His wife, Ruth Munroe, served as co-pastor with him at BFMI. They got married in 1978. Together, the couple had two children, Myles, Jr. (known as Chairo), and a daughter, Charisa.
-							</p>
-							<p>
-								Following his graduation from the University of Tulsa, Munroe founded Bahamas Faith Ministries International in the early 1980s.
-							</p>
+							<h2 data-aos-duration="400" data-aos="fade-in">Personal Life</h2>
+							<div data-aos-duration="400" data-aos="slide-up">
+								<p >
+									His wife, Ruth Munroe, served as co-pastor with him at BFMI. They got married in 1978. Together, the couple had two children, Myles, Jr. (known as Chairo), and a daughter, Charisa.
+								</p>
+								<p >
+									Following his graduation from the University of Tulsa, Munroe founded Bahamas Faith Ministries International in the early 1980s.
+								</p>
+							</div>
 						</div>
-						<p>
+						<p data-aos-duration="400" data-aos="fade-in-right">
 							<cite class="citation"><small><a href="https://en.wikipedia.org/wiki/Myles_Munroe">The biography of Dr Myles Munroe</a> - Wikipedia</small></cite>
 						</p>
 					</main>
@@ -61,7 +66,7 @@
 		<!-- favorite quote -->
 		<section class="fav-quote">
 			<div class="container">
-				<div class="v-whitespace">
+				<div class="v-whitespace" data-aos-duration="400" data-aos="fade-up">
 					<h3>Favorite quote</h3>
 					<q>The greatest Tragedy in life is not death, but life without a purpose</q>
 				</div>
@@ -73,8 +78,8 @@
 			<div class="container">
 				<div class="v-whitespace">
 					<div class="bibliography__intro">
-						<h3>Books</h3>
-						<p>
+						<h3 data-aos-duration="400" data-aos="fade-in">Books</h3>
+						<p data-aos-duration="400" data-aos="slide-up">
 							Munroe was the author and coauthor of numerous books and Biblical-related study guides as well as a featured speaker on motivational and Bible-study recordings. &nbsp;<cite class="citation"><small><a href="https://en.wikipedia.org/wiki/Myles_Munroe">The biography of Dr Myles Munroe</a> - Wikipedia</small></cite>
 						</p>
 					</div>
@@ -95,6 +100,8 @@
 		</footer>
 	</div>
 	
+	<!-- aos -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="./js/tribute.js"></script>
 </body>
 </html>

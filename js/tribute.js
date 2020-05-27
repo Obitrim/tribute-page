@@ -52,8 +52,7 @@ window.addEventListener('load', evt => {
 	renderPage();
 });
 
-
-
+window.addEventListener('load', initAOS);
 
 /*========================================
 =            Event Handlers              =
@@ -98,12 +97,13 @@ function renderPage(from = 0, to = booksPerPage ){
 	books
 	  .slice(from, to)
 	  .forEach(item => {
-	  	pagesHTML += `<li class="bibliography__book">${item}</li>`;
+	  	pagesHTML += `<li class="bibliography__book" data-aos="fade-in-left">${item}</li>`;
 	  });
 
 	biographyBooksContainer.innerHTML = pagesHTML;
 }
 
-function renderPaginationButtons(){
 
+function initAOS(evt){
+	AOS.init();
 }
