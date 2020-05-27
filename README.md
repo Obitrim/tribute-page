@@ -4,4 +4,5 @@ Myles Munroe, OBE (20 April 1954 – 9 November 2014) was a Bahamian evangelist 
 
 ## Clone
 To get all files in project, run the following command
-> git clone 
+> git clone https://github.com/Obitrim/tribute-page.git
+
